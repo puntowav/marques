@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!-- Declaració del tipus de document, HTML5 en aquest cas -->
+
+<html lang="ca"> <!-- Inici del document HTML amb especificació de l'idioma català -->
+
+<head>
+<title>Pràctica</title> <!-- Títol de la pàgina que apareixerà a la pestanya del navegador -->
+<meta charset ="utf-8"> <!-- Especificació de la codificació de caràcters UTF-8 -->
+<link rel="icon" href="img/favicon.ico"> <!-- Inclusió d'un icona que es mostrarà a la pestanya del navegador -->
+
+</head>
+    
+<body> <!-- Inici del cos del document HTML -->
+<header> <!-- Inici de l'encapçalament de la pàgina -->
+    
+    <h1>Llistes</h1> <!-- Capçalera nivell 1 -->
+    <h2>Llista sense ordenar</h2> <!-- Capçalera nivell 2 -->
+    
+    <p>Les llistes no ordenades van dins de l'etiqueta "ul" HTML i del seu tancament "/ul". Cada punt que vulguem afegir a la llista, ho farem dins de l'etiqueta "li" i el seu tancament. Si no li indiquem res a l'etiqueta "li" HTML, aquesta es generarà de forma automàtica. Però si volem definir nosaltres mateixos el símbol del punt, podem fer-ho gràcies a l'atribut “type”. Així podem fer que la llista estigui definida per punts negres (li type="disc"), per punts amb el fons blanc (li type="circle") o per quadrats (li type="square"). Tot i això, aquesta aparença dependrà del navegador. Hi ha alguns navegadors que donen altres aparences a aquests mateixos atributs.</p> <!-- Paràgraf explicatiu -->
+    
+    <ul> <!-- Llista no ordenada -->
+        <li type="circle">Primer element</li> <!-- Element de llista no ordenada -->
+        <li type="square">Segon element</li>
+        <li type="disc">Tercer element</li>
+    </ul>
+    
+    <h2>Llista ordenada</h2>
+    
+    <p>Les llistes ordenades van enmarcades dins de les etiquetes "ol" "/ol". Cada punt de la llista escriptor amb la mateixa etiqueta que en les no numerades: "li". Però al ser llistes ordenades els símbols seran números i aquests es generaran automàticament per ordre, a mesura que escrivim nous punts. En les llistes ordenades podem fer que el primer punt comenci amb el número que nosaltres vulguem. Ho aconseguirem gràcies a l'atribut "value". Els següents punts que escrivim es generaran automàticament per ordre, partint d'aquest número.</p>
+    
+    <ol> <!-- Llista ordenada -->
+        <li value="31">Primer element valor 31</li> <!-- Element de llista ordenada -->
+        <li>Segon element valor 32</li>
+        <li>Tercer element valor 33</li>
+    </ol>
+    
+    <h1>Imagte</h1>
+    
+    <p>Per posar una imatge senzilla en una pàgina web, utilitzem l'element "img". Es tracta d'un element buit (el que significa que no conté text ni etiqueta de tancament) que requereix com a mínim un atribut per ser utilitzat: src (a vegades anomenat pel seu nom complet, source). L'atribut src conté una ruta que apunta a la imatge que vols posar a la pàgina, que pot ser una URL relativa o absoluta, de la mateixa manera que l'element "a" conté els valors de l'atribut href.</p>
+    
+    <img src="img/dog.jpg"> <!-- Inclusió d'una imatge des la carpeta "img" -->
+    
+    <h1>Enllaç</h1>
+    
+    <p>Un enllaç bàsic es crea incloent el text (o qualsevol altre contingut, veure Convertir blocs de contingut en enllaços), que vulguem convertir en un enllaç utilitzant un element d'àncora "a", donant-li un atribut href (també conegut com a "Hypertext Reference", "target" o objectiu) que contindrà la direcció web cap on volem que apunti l'enllaç.</p>
+    
+    <a href="https://theuselessweb.com/">Link</a> <!-- Enllaç a una pàgina web -->
+        
+</header> <!-- Fi de l'encapçalament de la pàgina -->  
+    
+</body> <!-- Fi del cos del document HTML -->   
+
+</html> <!-- Fi del document HTML -->
