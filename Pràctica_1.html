@@ -4,16 +4,20 @@
 
 <head>
 <title>Pràctica</title> <!-- Títol de la pàgina que apareixerà a la pestanya del navegador -->
+<link href="estils.css" rel="stylesheet" type="text/css">
 <meta charset ="utf-8"> <!-- Especificació de la codificació de caràcters UTF-8 -->
 <link rel="icon" href="img/favicon.ico"> <!-- Inclusió d'un icona que es mostrarà a la pestanya del navegador -->
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Slabo+27px&display=swap" rel="stylesheet">    
+    
 </head>
     
 <body> <!-- Inici del cos del document HTML -->
 <header> <!-- Inici de l'encapçalament de la pàgina -->
     
-    <h1>Llistes</h1> <!-- Capçalera nivell 1 -->
-    <h2>Llista sense ordenar</h2> <!-- Capçalera nivell 2 -->
+    <h1 style="color: blueviolet; text-align: center;">Llistes</h1> <!-- Capçalera nivell 1 -->
+    <h2 class="sub">Llista sense ordenar</h2> <!-- Capçalera nivell 2 -->
     
     <p>Les llistes no ordenades van dins de l'etiqueta "ul" HTML i del seu tancament "/ul". Cada punt que vulguem afegir a la llista, ho farem dins de l'etiqueta "li" i el seu tancament. Si no li indiquem res a l'etiqueta "li" HTML, aquesta es generarà de forma automàtica. Però si volem definir nosaltres mateixos el símbol del punt, podem fer-ho gràcies a l'atribut “type”. Així podem fer que la llista estigui definida per punts negres (li type="disc"), per punts amb el fons blanc (li type="circle") o per quadrats (li type="square"). Tot i això, aquesta aparença dependrà del navegador. Hi ha alguns navegadors que donen altres aparences a aquests mateixos atributs.</p> <!-- Paràgraf explicatiu -->
     
@@ -43,7 +47,9 @@
     
     <p>Un enllaç bàsic es crea incloent el text (o qualsevol altre contingut, veure Convertir blocs de contingut en enllaços), que vulguem convertir en un enllaç utilitzant un element d'àncora "a", donant-li un atribut href (també conegut com a "Hypertext Reference", "target" o objectiu) que contindrà la direcció web cap on volem que apunti l'enllaç.</p>
     
-    <a href="https://theuselessweb.com/">Link</a> <!-- Enllaç a una pàgina web -->
+    <a class="link"href="https://theuselessweb.com/">Link</a> <!-- Enllaç a una pàgina web -->
+    
+    <a class="link" href="taules.html">Taules</a>
         
 </header> <!-- Fi de l'encapçalament de la pàgina -->  
     

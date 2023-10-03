@@ -1,0 +1,39 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.sub{
+    background-color: rgba(36,202,11,0.8);
+    color: #f1f1f1;
+}
+
+.link{
+    font-size: 2rem;
+    margin-right: 30px;
+}
+
+table, td, th{
+    border: 1px solid;
+    width: 35%;    
+}
+
+table{
+    text-align: left;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+caption{
+    color: blue;
+    margin-bottom: 16px
+}
+
+th{
+    text-align: center; 
+}
+
+th{
+    background-color: #e3e3e3;
+}
