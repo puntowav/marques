@@ -1,0 +1,61 @@
+/*1. color general de la lletra negra*/
+body{
+   color: #000; 
+}
+
+
+/*2. titol nivell 1 fons blanc lletra gris*/
+
+#titol-pagina{
+    background-color: #fff;
+    color: #ccc;
+}
+
+/*3. tots els strong en color verd i subratllats*/
+
+.paragraf1 strong, .paragraf2 strong{
+    color: #02a824;
+    text-decoration: underline;
+}
+
+
+/*4. enllaços del paràgraf2 en italica*/
+.paragraf2 a{
+    font-style: italic;
+}
+
+/*5. footer general del web centrat i lletra de 10px*/
+
+#container > footer{
+    text-align: center;
+    font-size: 10px;    
+}
+    
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+
+
+/*
+Canvia l’ordre de càrrega dels fitxers css i mira què passa. Explica en un comentari: 
+
+    Quins elements passen a veure’s diferent i quins es continuen veient tal com tu havies definit?
+
+    el .paragraf2 strong
+
+    Per què? 
+
+    pel sisteme que te en cascada, el ultim que esta escrit es representa
+
+    Com ho faries perquè tots els elements es continuïn veient tal com es veia abans d’invertir l’ordre de càrrega? Proposa un codi CSS.
+
+    #container strong {
+        color: #02a824;
+        text-decoration: underline; 
+    } 
+
+Selector per id.x
+Selector per classe.x
+Selector per etiqueta.x
+Espai per seleccionar un child.x
+Coma per seleccionar dos elements alhora.x
+Child o sibling selector (>, +, ~) (només un d’ells)x
+*/
