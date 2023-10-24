@@ -26,8 +26,8 @@
         </div>
          <!-- Se repite una estructura similar para otros campos de entrada como el correo electrónico, la edad, el dorsal, la posición, etc. -->
         <div>
-            <label class="flex" for="formMail">Emilio*</label> 
-            <input required class="txt" id="formMail" type="text" placeholder="jorge@chiringuito.cl">
+            <label class="flex" for="formMail">Emilio*</label> <!-- Los id van vinculados a los for, lo que asocia el input al label para mejorar la usabilidad y accesibilidad del formualrio en la web -->
+            <input required class="txt" id="formMail" type="text" placeholder="jorge@chiringuito.cl"> <!-- uso de placeholder, ejemplo o una pista sobre el tipo de información que se espera que se ingrese en ese campo -->
         </div>
         
         <div>
@@ -39,11 +39,11 @@
         
         <div>
             <label class="flex" for="dorsal">Dorsal*</label>
-            <input required class="txt" type="number" id="dorsal" name="dorsal" placeholder="Mi dorsal es..." min="1" max="99" />
+            <input required class="txt" type="number" id="dorsal" name="dorsal" placeholder="Mi dorsal es..." min="1" max="99" /> <!-- Campos de entrada para dorsal -->
         </div>
         
         <div>
-            <label  class="flex" for="despPosicion">Posicion*</label>
+            <label  class="flex" for="despPosicion">Posicion*</label> <!-- Campos de selección de posición, es un desplegable -->
             <select name="posicionJuego" id="despPosicion">
                 <option value="portero">Portero</option>
                 <option value="defensa">Defensa</option>
@@ -53,7 +53,7 @@
         </div>
         
         <div>
-            <label class="flex">Competicion europea favorita</label>
+            <label class="flex">Competicion europea favorita</label> <!-- Campos de entrada para competición europea favorita, estilo checkbox -->
             <div class="space">
             <input type="checkbox" id="champions">
             <label for="champions">Champions League</label>
@@ -73,7 +73,7 @@
         </div>
         
         <div>        
-            <label class="flex" for="cualidad">Cualidad como jugador</label>
+            <label class="flex" for="cualidad">Cualidad como jugador</label> <!-- Opciones para definir una cualidad como jugador, estilo radiobutton, excluyente -->
             <div class="space">
             <input type="radio" id="pase" name="cualidad">
             <label for="pase">Mago del pase</label>
