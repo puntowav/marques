@@ -15,11 +15,27 @@ form {
 input{
     border-radius: 4px;
     border: 0px;
+    background-color: #fefefe;
     padding: 4px 5px;     
 }
 
+input:focus{
+    border: 4px;
+    background-color: #D6F5FF; 
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
 div {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+textarea {
+  resize: vertical;
 }
 
 .flex {
@@ -36,6 +52,18 @@ div {
     height: 32px;
     padding-left: 8px;
     font-size: 1.1em;
+}
+
+.txt_2{
+    width: 90%;
+    height: 32px;
+    padding-left: 8px;
+    font-size: 1.1em;
+}
+
+.txt_3{
+    font-size: 1.1em;
+    width: 97%
 }
 
 select {

@@ -53,27 +53,27 @@
         </div>
         
         <div>
-            <label class="flex" for="competicionEuropea">Competicion Europea favorita</label><br>
-            <label class="checkbox">
+            <label class="flex" for="competicionEuropea">Competicion Europea favorita</label>
+            <label for="champions" class="checkbox">
                 <input type="checkbox" id="champions">
-                <span for="champions">Champions League</span>
+                <span id="champions">Champions League</span>
             </label>
-            <label class="checkbox">
+            <label for="europa" class="checkbox">
                 <input type="checkbox" id="europa">
-                <span for="europa">Europa League</span>
+                <span id="europa">Europa League</span>
             </label>
-            <label class="checkbox">
+            <label for="conference" class="checkbox">
                 <input type="checkbox" id="conference">
-                <span for="conference">Conference League</span>
+                <span id="conference">Conference League</span>
             </label>
-            <label class="checkbox">
+            <label for="otroCheck" class="checkbox">
                 <input type="checkbox" id="otroCheck" checked>
-                <input type="text" id="otroText" placeholder="Otros">
+                <input class="txt" type="text" id="otroText" placeholder="Otros">
             </label>
         </div>
         
         <div>        
-            <label for="cualidad">Cualidad como jugador</label>
+            <label class="flex" for="cualidad">Cualidad como jugador</label>
             <div>
             <input type="radio" id="pase" name="cualidad">
             <label for="pase">Mago del pase</label>
@@ -92,16 +92,21 @@
             </div>
             <div>
             <input type="radio" id="defensa" name="cualidad">
-            <label for="defensa">Defensor implacable</label>
+            <label class="select" for="defensa">Defensor implacable</label>
             </div>
             <div>
             <input type="radio" id="otros2" name="cualidad" checked>
-            <input type="text" id="otros2" name="cualidad" placeholder="Otros">
+            <input class="txt_2" type="text" id="otros2" name="cualidad" placeholder="Otros">
             </div>
         </div>
         
         <div>
-            <button class="btn" type="button">Enviar</button>
+            <label class="flex" for="cualidad">Danos tú opinión</label>
+            <textarea class="txt_3" rows="10" charswidth="23" name="text_body" placeholder="Yo creo que..."></textarea>
+        </div>
+        
+        <div>
+            <button class="btn" type="submit">Enviar</button>
         </div>
     
     </form>
