@@ -1,38 +1,38 @@
 body {
-    width: 500px;
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
-    background-color: #fefefe;
-    color: #080808;
+    width: 500px; /* Ancho del cuerpo de la página */
+    margin: auto; /* Centrar el contenido en el medio de la página */
+    font-family: 'Roboto', sans-serif; /* Fuente utilizada en todo el cuerpo de la página */
+    background-color: #fefefe; /* Color de fondo de la página */
+    color: #080808; /* Color del texto */
 }
 
 form {
-    border-radius: 4px;
+    border-radius: 4px; /* Radio de borde del formulario */
     background-color: #efeff4;
-    padding: 16px;
+    padding: 16px;  Espaciado interior del formulario */
 }
 
 p{
   color: #0e7afe;
-  font-size: 1.5rem; 
-    font-weight: 500;
+  font-size: 1.5rem; /* Tamaño de fuente de los párrafos */
+    font-weight: 500; /* Peso de la fuente de los párrafos */
 }
 
 input{
     border-radius: 4px;
-    border: 0px;
+    border: 0px; /* Borde de los campos de entrada */
     background-color: #fefefe;
     padding: 4px 5px;     
 }
 
-input:focus{
+input:focus{ /*mismo que el anterior pero cuando esta seleccionado*/
     border: 4px;
     background-color: #EBF3FF; 
 }
 
 label {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
+    font-size: 1.1rem; /* Tamaño de fuente para etiquetas */
+    margin-bottom: 8px; /* Espaciado inferior de las etiquetas */
 }
 
 div {
@@ -63,10 +63,10 @@ textarea {
 }
 
 .txt{
-    width: 97%;
-    height: 32px;
-    padding-left: 8px;
-    font-size: 1.1em;
+    width: 97%; /* Ancho de los campos de entrada con clase "txt" */
+    height: 32px; /* Altura de los campos de entrada con clase "txt" */
+    padding-left: 8px; /* Espaciado izquierdo de los campos de entrada con clase "txt" */
+    font-size: 1.1em; /* Tamaño de fuente de los campos de entrada con clase "txt" */
 }
 
 .txt_2{
@@ -95,10 +95,10 @@ select {
     font-size: 1.2em;
     background-color: #0e7afe;
     border: 0px;
-    border-radius: 4px;
+    border-radius: 4px; /* Radio de borde de botones con clase "btn" */
 }
 
 .btn:hover {
-    color: #91CAEE;
-    background-color: #0e5abe;
+    color: #91CAEE; /* Cambio de color de texto en botones al pasar el mouse por encima */
+    background-color: #0e5abe; /* Cambio de color de fondo de botones al pasar el mouse por encima */
 }
