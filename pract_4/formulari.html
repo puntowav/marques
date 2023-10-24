@@ -53,36 +53,36 @@
         </div>
         
         <div>
-            <label class="flex" for="competicionEuropea">Competicion Europea favorita</label>
-            <label for="champions" class="checkbox">
-                <input type="checkbox" id="champions">
-                <span id="champions">Champions League</span>
-            </label>
-            <label for="europa" class="checkbox">
-                <input type="checkbox" id="europa">
-                <span id="europa">Europa League</span>
-            </label>
-            <label for="conference" class="checkbox">
-                <input type="checkbox" id="conference">
-                <span id="conference">Conference League</span>
-            </label>
-            <label for="otroCheck" class="checkbox">
-                <input type="checkbox" id="otroCheck" checked>
-                <input class="txt" type="text" id="otroText" placeholder="Otros">
-            </label>
+            <label class="flex">Competicion europea favorita</label>
+            <div class="space">
+            <input type="checkbox" id="champions">
+            <label for="champions">Champions League</label>
+            </div>
+            <div class="space">
+            <input type="checkbox" id="europa">
+            <label for="europa">Europa League</label>
+            </div>
+            <div class="space">
+            <input type="checkbox" id="conefrence">
+            <label for="conference">Conference League</label>
+            </div>
+            <div class="space">
+            <input type="checkbox" id="otroCheck" checked>
+            <input class="txt_2" type="text" id="otros2" name="cualidad" placeholder="Otros">
+            </div>
         </div>
         
         <div>        
             <label class="flex" for="cualidad">Cualidad como jugador</label>
-            <div>
+            <div class="space">
             <input type="radio" id="pase" name="cualidad">
             <label for="pase">Mago del pase</label>
             </div>
-            <div>
+            <div class="space">
             <input type="radio" id="chute" name="cualidad">
             <label for="chute">Rematador incesante</label>
             </div>
-            <div>
+            <div class="space">
             <input type="radio" id="faltas" name="cualidad">
             <label for="faltas">Experto tirador de faltas</label>
             </div>
@@ -90,11 +90,11 @@
             <input type="radio" id="corner" name="cualidad">
             <label for="corner">Colocador de corners</label>
             </div>
-            <div>
+            <div class="space">
             <input type="radio" id="defensa" name="cualidad">
             <label class="select" for="defensa">Defensor implacable</label>
             </div>
-            <div>
+            <div class="space">
             <input type="radio" id="otros2" name="cualidad" checked>
             <input class="txt_2" type="text" id="otros2" name="cualidad" placeholder="Otros">
             </div>
@@ -106,7 +106,9 @@
         </div>
         
         <div>
-            <button class="btn" type="submit">Enviar</button>
+            
+           <input class="btn" type="submit" value="Enviar">
+            
         </div>
     
     </form>
