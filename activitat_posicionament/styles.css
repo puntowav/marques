@@ -13,21 +13,25 @@ body{
 }
 
 header {
-    background-image: url(img/Hector%20Isaac.jpg);
-    height: 15vh;
+    /*background-image: url(img/Hector%20Isaac.jpg);*/
+    background-color: rgb(45, 45, 45);
+    height: 6vh;
+    width: 100%;
+    position: fixed;
 }
 
 header h1 {
-    padding-top: 48px;
+    padding-top: 16px;
     color: rgb(243, 243, 243);
-    text-shadow: 2px 2px 5px black;
+    /*text-shadow: 2px 2px 5px black;*/
 }
 
 nav {
     background-color: rgb(45, 45, 45);
     position: sticky;
     top: 0;
-    height: 5vh;
+    height: 6vh;
+    margin-top: 6vh;
 }
 
 nav ul {
