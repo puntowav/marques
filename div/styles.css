@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.div {
+    background-color: chartreuse;
+    width: 20vh;
+    height: 20vh;
+    margin: 2vh;
+    transition: all .5s;
+    text-align: center;
+    font-size: 4.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div:hover {
+    background-color: fuchsia;
+    width: 44vh;
+    height: 44vh;
+    
+}
