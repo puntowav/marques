@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE exemple_complert SYSTEM "exemple.dtd">
+<exemple_complert>
+    <agenda>
+        <contacte dni="G44444444">
+            <nom></nom>
+            <cognom></cognom>
+            <tlf pais="es">935555555</tlf>
+            <email></email>
+            <adreca>
+                <carrer></carrer>    
+                <num></num>
+                <cp></cp>
+            </adreca>
+            <comandes>
+                <comanda>
+                    <productecom id_prod="a01">
+                    </productecom>
+                </comanda>
+            </comandes>
+        </contacte>
+    </agenda>
+    
+    <productes>
+        <producte id="a01"></producte>
+    </productes>
+</exemple_complert>

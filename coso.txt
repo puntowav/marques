@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fonts>
+    <font>
+        <nom>Roboto<nom>
+        <mida>14<miad>
+        <estil>normal<estil>
+    <font>
+    <font>
+        <nom>Mono<nom>
+        <mida>12<miad>
+        <estil>negreta<estil>
+    <font>
+<fonts>

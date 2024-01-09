@@ -1,0 +1,29 @@
+<!ELEMENT exemple_complert (agenda?,productes?)>
+<!ELEMENT agenda (contacte*,productes*)>
+<!ELEMENT contacte (nom, cognom+, tlf, email?, adreca,comandes)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT tlf (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT adreca (carrer, num, cp)>
+<!ELEMENT carrer (#PCDATA)>
+<!ELEMENT num (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT comandes (comanda)>
+<!ELEMENT comanda (productecom)>
+<!ELEMENT productecom (#PCDATA)>
+<!ELEMENT productes (producte+)>
+<!ELEMENT producte (#PCDATA)>
+<!ATTLIST tlf pais CDATA  #REQUIRED>
+<!ATTLIST contacte dni ID  #REQUIRED>
+<!ATTLIST producte id ID  #REQUIRED>
+<!ATTLIST productecom id_prod IDREF #REQUIRED>
+
+<!ELEMENT esdeveniments (esdeveniment*)>
+<!ELEMENT esdeveminet (grup,lloc,data,entrada?)>
+<!ELEMENT grup (#PCDATA)>
+<!ELEMENT lloc (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT entrada (#PCDATA)>
+<!ATTLIST entrada gratuita (si|no) #REQUIRED>
+
