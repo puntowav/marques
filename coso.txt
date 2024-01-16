@@ -1,13 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
     <font>
-        <nom>Roboto<nom>
-        <mida>14<miad>
-        <estil>normal<estil>
+        <nom>Roboto</nom>
+        <mida>14</miad>
+        <estil>normal</estil>
+    </font>
     <font>
-    <font>
-        <nom>Mono<nom>
-        <mida>12<miad>
-        <estil>negreta<estil>
-    <font>
-<fonts>
+        <nom>Mono</nom>
+        <mida>12</miad>
+        <estil>negreta</estil>
+    </font>
+</fonts>
+
+<SO>
+    <idiom>català</idioma>
+    <tema>fosc</tema>
+    <notificasions>
+        <actividades>true</actividades>
+        <to>prederterminat</to>
+    </notificasions>
+    <preferencies mostra_publicitat="flase">
+        <ordre_menu>
+            <elemnt_menu>perfil</elemnt_menu>
+            <elemnt_menu>config</elemnt_menu>
+            <elemnt_menu>ajuda</elemnt_menu>
+        </ordre_menu>      
+    </preferencies>
+</SO>
+
+cotxe{
+    marca: "toyota",
+    model: "Camry",
+    tipus: "sedan",
+    descompte: 3,
+    preu: 25000,
+    moneda: "EUR"    
+}
+
+{
+    "marca": "toyota",
+    "model": {
+        "nom": "Camry",
+        "tipus": "sedan"
+    },
+    "tipus": "sedan",
+    "descompte": 3,
+    "preu": {
+        "moneda": "EUR",
+        "cost": 25000    
+    }
+}
+
+{
+    "alumnes": {
+            {            
+                "matricula": "A123",
+                "edat": "22", 
+                "alias": "Maria" 
+            }
+            {            
+                "matricula": "B456",
+                "edat": "21", 
+                "alias": "Pere" 
+            }
+    },
+    "professors": {
+        "departament": "Matematiques",
+        "alias": "Dra. Martinez"
+    }
+    
+}
