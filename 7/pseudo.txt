@@ -1,0 +1,53 @@
+a. fun getUnitatMesuraAltura(pokemon) {
+       return pokemon["info"]["heigth"].split(" ")[1];
+   }
+
+b. fun isSegonMovimentDeContacte(pokemon) {
+       return pokemon["moviments"][1]["contact"];
+   }
+
+c. fun getSumaEstadistiques(pokemon) {
+       stats = pokemon["info"]["stats"];
+       return stats["speed"] + stats["strength"] + stats["accuracy"] + stats["endurance"];
+   }
+
+d. fun getMitjanaEstadistiques(pokemon) {
+       stats = pokemon["info"]["stats"];
+       return (stats["speed"] + stats["strength"] + stats["accuracy"] + stats["endurance"]) / 4;
+   }
+
+e. fun getPes(llistaPokemon) {
+       sumaPesos = 0;
+       for each pokemon in llistaPokemon {
+           pes = parseFloat(pokemon["info"]["weight"].split("kg")[0]);
+           sumaPesos += pes;
+       }
+       return sumaPesos;
+   }
+
+f. fun isEvolucioPossible(pokemon, nivell) {
+       return nivell >= pokemon["evolutions"][0]["lvl"];
+   }
+
+g. fun getPotenciaMoviment(moviment) {
+       return moviment["power"];
+   }
+
+   fun getPotenciaMesAlta(pokemonsList) {
+       potenciaMesAlta = 0;
+       pokemonMesAlta = null;
+
+       for each pokemon in pokemonsList {
+           potenciaActual = 0;
+           for each moviment in pokemon["moviments"] {
+               potenciaActual += getPotenciaMoviment(moviment);
+           }
+
+           if (potenciaActual > potenciaMesAlta) {
+               potenciaMesAlta = potenciaActual;
+               pokemonMesAlta = pokemon;
+           }
+       }
+
+       return pokemonMesAlta;
+   }

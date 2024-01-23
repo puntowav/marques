@@ -1,0 +1,122 @@
+[
+	{
+		"id": 304,
+		"info": {
+			"name": "Aron",
+			"type": "Acero",
+			"weight": "60kg",
+			"height": "0.4m",
+			"stats": {
+				"speed": 3,
+				"strength": 5,
+				"accuracy": 3,
+				"endurance": 3,
+				"jump": 2
+			}
+		},
+		"movements": [
+			{
+				"name": "Placaje",
+				"description": "Placaje causa daño y no tiene ningún efecto secundario. Este movimiento tiene una potencia de 35 y una precisión del 95%.",
+				"power": 30,
+				"contact": true
+			},
+			{
+				"name": "Garra Metal",
+				"description": "Garra metal causa daño y tiene una probabilidad del 10% de subir un nivel el ataque del usuario.",
+				"power": 50,
+				"contact": false
+			},
+			{
+				"name": "Defensa férrea",
+				"description": "Defensa férrea sube dos niveles la defensa del usuario.",
+				"power": 20,
+				"contact": true
+			},
+			{
+				"name": "Cuerpo pesado",
+				"description": "Cuerpo pesado causa daño y no tiene ningún efecto secundario. Su potencia depende del peso de los Pokémon.",
+				"power": 70,
+				"contact": true
+			}
+		],
+		"pic": "/imgs/Aron.jpg",
+		"evolutions": [
+			{
+				"id": 304,
+				"name": "Aron",
+				"lvl": 1
+			},
+			{
+				"id": 305,
+				"name": "Lairon",
+				"lvl": 32
+			},
+			{
+				"id": 306,
+				"name": "Aggron",
+				"lvl": 42
+			}
+		]
+	},
+	{
+		"id": 255,
+		"info": {
+			"name": "Torchic",
+			"type": "Fuego",
+			"weight": "2.5kg",
+			"height": "0.4m",
+			"stats": {
+				"speed": 5,
+				"strength": 4,
+				"accuracy": 4,
+				"endurance": 3,
+				"jump": 4
+			}
+		},
+		"movements": [
+			{
+				"name": "Envite ígneo",
+				"description": "Envite ígneo causa daño y tiene una probabilidad del 10%.",
+				"power": 120,
+				"contact": true
+			},
+			{
+				"name": "Lanzallamas",
+				"description": "Lanzallamas causa daño y tiene una probabilidad del 10% de quemar al objetivo. Lanzallamas tiene una potencia de 95.",
+				"power": 90,
+				"contact": false
+			},
+			{
+				"name": "Nitrocarga",
+				"description": "Nitrocarga causa daño y siempre aumenta en un nivel la velocidad del usuario.",
+				"power": 50,
+				"contact": true
+			},
+			{
+				"name": "Ascuas",
+				"description": "Ascuas causa daño y tiene una probabilidad del 10% de quemar al objetivo.",
+				"power": 40,
+				"contact": false
+			}
+		],
+		"pic": "/imgs/Torchic.jpg",
+		"evolutions": [
+			{
+				"id": 255,
+				"name": "Torchic",
+				"lvl": 1
+			},
+			{
+				"id": 256,
+				"name": "Combusken",
+				"lvl": 16
+			},
+			{
+				"id": 257,
+				"name": "Blaziken",
+				"lvl": 36
+			}
+		]
+	}
+]
