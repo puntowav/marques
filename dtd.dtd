@@ -1,0 +1,24 @@
+
+
+<!ELEMENT rss (channel)>
+<!ELEMENT channel (title, link, link, description, language, item+)>
+<!ELEMENT title (#PCDATA)>
+
+<!--Te un namespace ja que hi ha dos links-->
+<!ELEMENT atom:link EMPTY>
+<!ATTLIST atom:link href CDATA #REQUIRED>
+<!ATTLIST atom:link rel CDATA #IMPLIED>
+<!ATTLIST atom:link type CDATA #IMPLIED>
+
+
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT item (title, link, description, category+, pubDate, guid, creator,thumbnail)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT pubDate (#PCDATA)>
+<!ELEMENT guid (#PCDATA)>
+<!ATTLIST guid isPermaLink (true|false) "true">
+<!ELEMENT creator (#PCDATA)>
+<!ELEMENT thumbnail EMPTY>
+<!ATTLIST thumbnail url CDATA #REQUIRED>
