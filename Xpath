@@ -1,0 +1,8 @@
+/sistemes operatius/sistema/nom/node() or //nom/node() or //sistema/nom/node()
+//sistema[2]
+//sistema[2]/nom/node()
+//sistema[propietari="Google"]/any_llancament/node()
+//sistema[any_llancament<=2000 and any_llancament>1900]/propietari/node() or //sistema/any[node()> 2001]/../propietari/node()
+//sistema[@version="12"]/nom/node()
+
+| -> sinonimo de and es como un or 
