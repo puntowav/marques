@@ -1,0 +1,461 @@
+{
+  "start": [
+    {
+      "descripcion": "Bienvenido/a al scape room del picapollo haz \"/salon\" para empezar el juego",
+      "reglas": "Por favor, te pedimos que no mires el .json entero para no saber la solución, no seas tramposo ;)",
+      "como_usar": "Te recomendamos que consultes la documentacion oficial de Json Server, pero te damos un par de pinceladas en caso de que no quieras",
+      "delete_put_patch": "Para hacer estas operaciones es necesairio indicar el id del objeto, este te lo iremos proporcionando nosotros",
+      "get_post":"Para hacer get y post solo es necesario poner el nombre del mismo",
+      "mapa_de_la_casa":"https://shorturl.at/oDGKP"
+    }
+  ],
+  "salon": [
+    {
+      "mapa_del_salon":"https://shorturl.at/nPT39"
+    },
+    {
+      "descripcion": "Te encuentras en el salon de la casa parece que hay varios muebles en los que podrias buscar",
+      "id": "ac39"
+    },
+    {
+      "ubicacion": "garaje",
+      "accion": "Haz \"/garaje\" para intentar entrar",
+      "id": "69b7"
+    },
+    {
+      "ubicacion": "escaleras",
+      "accion": "Haz \"/escalera\" para intentar subir al piso de arriba",
+      "id": "40f8"
+    },
+    {
+      "objeto": "armario_rojo",
+      "accion": "Haz \"/armario_rojo\" para mirar en su interior",
+      "id": "b2c0"
+    },
+    {
+      "objeto": "armario_azul",
+      "accion": "Haz \"/armario_azul\" para mirar en su interior",
+      "id": "969f"
+    },
+    {
+      "persona": "mi padre",
+      "descripcion": "Parece que el cabron se ha sobado en el sofa",
+      "id": "441f"
+    }
+  ],
+  "armario_rojo": [
+    {
+      "interior": "Túnica_KKK",
+      "descripcion": "Se me había olvidado asistir a la reunión de anoche.",
+      "id": "d0d8"
+    }
+  ],
+  "armario_azul": [
+    {
+      "interior": "Llave del garaje",
+      "accion": "Haz \"/garaje_8\" para entrar y eliminala con delete"
+    },
+    {
+      "id" : "llave"
+    }
+  ],
+  "garaje": "Parece que la puerta esta cerrada, necesitaremos una llave para abrir.",
+  "garaje_8": [
+    {
+      "mapa_del_garaje":"https://shorturl.at/gADGL"
+    },
+    {
+      "descripcion": "Se ha abierto la puerta, en el garaje parece que solo esta el coche y algunos muebles",
+      "id": "4406"
+    },
+    {
+      "objeto": "maletero",
+      "acción": "Haz\"/maletero\" para mirar en su interior",
+      "id": "d4a0"
+    },
+    {
+      "objeto": "puerta trasera",
+      "acción": "Haz\"/puerta_trasera\" para mirar en su interior",
+      "id": "f74f"
+    },
+    {
+      "objeto": "estante superior",
+      "acción": "Haz\"/estante\" para mirar en su interior",
+      "id": "e9c1"
+    },
+    {
+      "objeto": "armario garaje",
+      "acción": "Haz\"/armario_garaje\" para mirar en su interior",
+      "id": "f88c"
+    }
+  ],
+  "maletero": [
+    {
+      "interior": "diente",
+      "accion": "De quien sera este diente?",
+      "id": "81e0"
+    },
+    {
+      "interior": "restos de cristal",
+      "accion": "Porque esta todo esto aqui?",
+      "id": "b1d0"
+    },
+    {
+      "interior": "toalla",
+      "accion": "Parece que esta manchada de sangre",
+      "id": "a452"
+    },
+    {
+      "interior": "maleta",
+      "accion": "Parece que esta vacia",
+      "id": "33e8"
+    }
+  ],
+  "estante": [
+    {
+      "interior": "botellas",
+      "accion": "Sera mejor que no siga bebiendo",
+      "id": "f9f7"
+    },
+    {
+      "interior": "caja de herramientas",
+      "accion": "Haz \"/caja_herramientas\" para ver en su interior",
+      "id": "be85"
+    }
+  ],
+  "puerta_trasera": {
+    "interior": "bolsa deportiva",
+    "accion": "Haz \"/bolsa_deportiva\" para ver en su interior"
+  },
+  "armario_garaje": [
+    {
+      "interior": "collecion de revistas",
+      "accion": "Haz \"/revistas\" para ver la coleccion",
+      "id": "44f0"
+    },
+    {
+      "interior": "cajas",
+      "accion": "Parece que no hay nada importante dentro",
+      "id": "1b9e"
+    }
+  ],
+  "caja_herramientas": [
+    {
+      "interior": "tornavis",
+      "accion": "No puedes hacer nada con el",
+      "id": "36b3"
+    },
+    {
+      "interior": "destornillador",
+      "accion": "No puedes hacer nada con el",
+      "id": "cb0b"
+    },
+    {
+      "interior": "martillo",
+      "accion": "No puedes hacer nada con el",
+      "id": "a5e2"
+    },
+    {
+      "interior": "alicates",
+      "accion": "No puedes hacer nada con el",
+      "id": "d40f"
+    },
+    {
+      "interior": "llave inglesa",
+      "accion": "No puedes hacer nada con el",
+      "id": "e55d"
+    }
+  ],
+  "bolsa_deportiva": {
+    "interior": "Parece que entre la ropa sudada hay un pollo, con esto me servira",
+    "accion *post*": "Mete dentro de la cazuela el pollo con un post (/cazuela \"id\" : \"1\", \"ingrediente\" : \"pollo\")",
+    "reflexion": "Parece que ya no voy tan pedo podria buscar ahora en la planta de arriba, haz \"/escalera_7\""
+  },
+  "revistas": [
+    {
+      "interior": "revista deportiva",
+      "accion": "Solo habla de futbol",
+      "id": "1e8c"
+    },
+    {
+      "interior": "revista cientifica",
+      "accion": "Me encantan los animales",
+      "id": "b46c"
+    },
+    {
+      "interior": "revista picantona",
+      "accion": "Haz \"/revista_picantona\" para verla",
+      "id": "128b"
+    }
+  ],
+  "revista_picantona": "Me corroooooo!!!!!",
+  "escalera": "Vale, estas escaleras las recuerdo, pero no sé donde está la habitación, voy muy borracho. Deberia seguir buscando por aquí debajo.",
+  "escalera_7": [
+    {
+      "descripcion": "Vale, subiré a ver si encuentro la habitación.",
+      "id": "98ac"
+    },
+    {
+      "ubicacion": "primer_piso",
+      "accion": "Haz \"/primer_piso\" para intentar entrar",
+      "id": "217a"
+    }
+  ],
+  "primer_piso": [
+    {
+      "mapa_primer_piso":"https://shorturl.at/buSTW"
+    },
+    {
+      "descripcion": "Aquí está la oficina de mi padre, la habitación del perro y la de mi hermano.",
+      "accion": "Tienes diferentes habitaciones, haz \"/oficina\" para intentar entrar o \"/habitacion_perro\" o \"/habitacion_hermano\"",
+      "subir": "Parece que aquí no hay nada, subiré al siguiente piso. Haz \"/segundo_piso\" para subir."
+    }
+  ],
+  "oficina": [
+    {
+      "mapa_oficina":"https://shorturl.at/iBHOP"
+    },
+    {
+      "descripcion": "¿Qué hace mi padre durmiendo en el suelo?",
+      "id": "2aba"
+    },
+    {
+      "interior": [
+        {
+          "persona": "Mi_padre.",
+          "descripcion": "Parece que se ha dormido en el sofá."
+        },
+        {
+          "objeto": "Escritorio",
+          "descripcion": "¿Me juego un fortnite?"
+        },
+        {
+          "objeto": "Caja_fuerte",
+          "descripcion": "No me sé la contraseña, o creo que sí, no sé, sigo borracho."
+        }
+      ],
+      "accion": "Vuelve a al primer piso haciendo \"/primer_piso\"",
+      "id": "fb24"
+    }
+  ],
+  "habitacion_perro": [
+    {
+      "mapa_habitacion_perro":"https://shorturl.at/pAHK0"
+    },
+    {
+      "descripcion": "Huele a cagao aquí, ¿no?",
+      "id": "bfc4"
+    },
+    {
+      "interior": [
+        {
+          "objeto": "Cama",
+          "descripcion": "Debería limpiar esto algún día."
+        },
+        {
+          "objeto": "Caja_juguetes",
+          "descripcion": "No sé ni qué hago buscando aquí."
+        }
+      ],
+      "id": "4663"
+    },
+    {
+      "accion": "Vuelve a al primer piso haciendo \"/primer_piso\"",
+      "id": "9f06"
+    }
+  ],
+  "habitacion_hermano": [
+    {
+      "mmapa_habitacion_hermano":"https://shorturl.at/hpABI"
+    },
+    {
+      "descripcion": "Aquí sí que huele extraño...",
+      "id": "b8c4"
+    },
+    {
+      "interior": [
+        {
+          "objeto": "Tanga",
+          "descripcion": "¿Por qué mi hermano tiene esto si tiene 13 años?"
+        },
+        {
+          "objeto2": "Escritorio",
+          "descripcion2": "Vaya desorden. ¿Qué mirará mi hermano en el ordenador?"
+        }
+      ],
+      "accion": "Vuelve a al primer piso haciendo \"/primer_piso\"",
+      "id": "e040"
+    }
+  ],
+  "segundo_piso": [
+    {
+      "mapa_segin_pis":"https://shorturl.at/exGT9"
+    },
+    {
+      "descripcion": "Aquí está mi habitación y la de mi padre.",
+      "accion": "Tienes diferentes habitaciones, haz \"/habitacion_padre\" para intentar entrar o \"/habitacion\""
+    }
+  ],
+  "habitacion_padre": [
+    {
+      "mapa_habitacion_padre":"https://shorturl.at/nrwL9"
+    },
+    {
+      "descripcion": "Esto siempre está limpio, pero no debería meterme aquí.",
+      "id": "3889"
+    },
+    {
+      "interior": [
+        {
+          "objeto": "Rifle",
+          "descripcion": "¿Mi padre era militar?"
+        },
+        {
+          "objeto": "Pastillas",
+          "descripcion": "¿Y esto? ¿Desde cuando toma pastillas?"
+        }
+      ],
+      "accion": "Vuelve a al primer piso haciendo \"/segundo_piso\"",
+      "id": "1d0c"
+    }
+  ],
+  "habitacion": [
+    {
+      "mapa_habitacion":"https://shorturl.at/ozHOT"
+    },
+    {
+      "descripcion": "Al fin llego a mi habitación, que sueño, pero necesito comer primero.",
+      "id": "1c8c"
+    },
+    {
+      "objeto": "armario_hab",
+      "accion": "Haz \"/armario_hab\" para mirar en su interior",
+      "id": "7a5e"
+    },
+    {
+      "objeto": "mesita_de_noche",
+      "accion": "Haz \"/mesita_de_noche\" para mirar en su interior",
+      "id": "6c7c"
+    },
+    {
+      "ubicacion": "baño",
+      "accion": "Haz \"/baño\" para intentar entrar",
+      "id": "7f85"
+    }
+  ],
+  "armario_hab": [
+    {
+      "interior": "Nada",
+      "descripcion": "Sigue buscando.",
+      "id": "f890"
+    }
+  ],
+  "mesita_de_noche": [
+    {
+      "interior": "Parece que dentro hay un limón.",
+      "accion *put*": "Aqui va el segundo, mete el limon en la cazuela con put (/cazuela \"id\" : \"2\", \"ingrediente\" : \"limon\")",
+      "reflexion": "Parece que el baño ya no esta ocupado, haz \"/baño_9\" para entrar",
+      "id": "5185"
+    }
+  ],
+  "baño": "Parece que el baño está ocupado",
+  "baño_9": [
+    {
+      "mapa_baño":"https://shorturl.at/jpvQ1"
+    },
+    {
+      "descripcion": "El baño está vacio, ahora toca buscar el último ingrediente",
+      "id": "cbf1"
+    },
+    {
+      "objecto": "bañera",
+      "accion": "Haz \"/bañera\" para mirar en su interior",
+      "id": "a204"
+    },
+    {
+      "objecto": "inodoro",
+      "accion": "Haz \"/inodoro\" para mirar en su interior",
+      "id": "6484"
+    },
+    {
+      "objecto": "armario_sanitario",
+      "accion": "Haz \"/armario_sanitario\" para mirar en su interior",
+      "id": "0851"
+    },
+    {
+      "objecto": "maquina_de_rayos_X",
+      "accion": "Haz \"/maquina_de_rayos_X\" para mirar en su interior",
+      "id": "e1c2"
+    }
+  ],
+  "bañera": [
+    {
+      "interior": "parece que que el gato esta muy dormido",
+      "accion": "Haz \"/mojar\" despertar al gato",
+      "id": "4843"
+    }
+  ],
+  "mojar": [
+    {
+      "gato": "MEEEEEEEEEEEEEEEOWWWWWWW!!!!!!!!!!!!",
+      "id": "0034"
+    }
+  ],
+  "inodoro": [
+    {
+      "intentar": "Alguien cenó fuerte, y no uso la cisterna.",
+      "accion *delete*": "Haz \"/caca\" para tirar de la cisterna."
+    }
+  ],
+  "caca": [
+    {
+      "id":"tirar_cadena",
+      "accion": "Deberia tirar de la cadena, haz delete de \"id\" : \"caca\"."
+    },
+    {
+      "id" : "caca"
+    }
+  ],
+  "armario_sanitario": [
+    {
+      "intentar": "termómetro",
+      "descripcion": "No creo que se muy util, ¿por qué estara manchado?",
+      "id": "c88c"
+    },
+    {
+      "intentar": "jeringa",
+      "descripcion": "Ahora entiendo lo de mi padre.",
+      "id": "8d4e"
+    },
+    {
+      "intentar": "guantes",
+      "guantes": "Como me gusta el holor a látex.",
+      "id": "f1c8"
+    }
+  ],
+  "maquina_de_rayos_X": [
+    {
+      "interior": "Es muy pequeño para ser una maquina de rayos x, vale creo que es un tostón",
+      "accion *patch*": "Para acabar el picapollo tendre que meter el toston en la cazuela, haz un patch en la cazuela para añadir el toston en el id : 3 (/cazuela \"ingrediente\" : \"toston\")",
+      "reflexion": "Que ganas de comerme tremendo picapollo, Haz \"/cazuela_173\" para comer el picapollo mi loco",
+      "id": "7356"
+    }
+  ],
+  "cazuela": [
+    {
+      "id" : "2",
+      "ingrediente" : "desconocido"
+    },
+    {
+      "id" : "3"
+    }
+  ],
+  "cazuela_173": [
+    {
+      "descripcion": "Esto ya está listo.",
+      "accion": "Haz \"comer_999\" para comer el picapollo.",
+      "id": "2de2"
+    }
+  ],
+  "comer_999": "Que rico por dios, ÑAM ÑAM ÑAM ÑAM ÑAM ÑAM ÑAM :)"
+}
